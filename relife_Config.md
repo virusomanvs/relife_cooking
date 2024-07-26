@@ -26,7 +26,9 @@
             "m_TimeToCooking": 350.0,
             "m_ResultLiquid": 4194304,
             "m_ResultLiquidQuantity": 2000,
-            "recipeName": "#STR_liq_LIQUID_RICESOUP"
+            "recipeName": "#STR_liq_LIQUID_RICESOUP",
+            "HideIsPerkNotActive": 0,
+            "NeedPerkToCook": 100
         }
 ]
 ```
