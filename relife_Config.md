@@ -45,6 +45,7 @@
 ]
 ```
 - **`recipeUniqueID`**: `int` Уникальный ID рецепта. Не должен повторятся.
+- **`categoryID`**: `string` ID категории. Если оставить пустой то будет только в разделе "Все рецепты".
 - **`m_NeedLiquid`**: `string`  Необходимая жидкость для приготовления. 512 - Вода. Можете указать любую другую, чтобы делать цепочки супов.
 - **`m_NeedBottleToCookIsKindOf`**: `bool` Включить наследуемость родительского класса в параметре m_NeedBottleToCook
 - **`m_NeedBottleToCook`**: `TStringArray` Необходимая емкость для приготовления.
@@ -119,3 +120,22 @@
 - **`agentsID`**: `int` ИД агента.
 - **`titleText`**: `string` название агента (холеры, сальмонеллы и т.п.)
 
+## RecipeCategoryList
+## Настройка категорий рецептов
+```json
+"RecipeCategoryList": [
+        {
+            "categoryID": "Soups",
+            "categoryIcon": "relife_Cooking/images/soup.edds",
+            "categoryTitle": "Soups"
+        },
+        {
+            "categoryID": "Meat",
+            "categoryIcon": "relife_Cooking/images/soup.edds",
+            "categoryTitle": "Meat soup"
+        }
+    ],
+```
+- **`categoryID`**: `string` ИД категории, которое будет якорем для категории в рецепте.
+- **`categoryIcon`**: `string` Путь к иконке
+- **`categoryTitle`**: `string` Название категории
